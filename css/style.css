@@ -1,0 +1,117 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0b579e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-size: 1.26rem;
+}
+
+.images img {
+    width: 100%;
+    border: 2px solid #0b579e;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #0b579e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #5eded3;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: auto;
+    top: 10px;
+    padding: 10px;
+    background-color: #0b579e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Nature & Wildlife page */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border: 2px solid #0b579e;
+    border-radius: 10px;
+}
+
+/* Food & Culture page */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex div {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+.flex img {
+    width: 100%;
+    border: 2px solid #0b579e;
+    border-radius: 10px;
+}
+
+.flex img:nth-child(even) {
+    border-radius: 0 10px 10px 0;
+}
+
+.flex img:nth-child(odd) {
+    border-radius: 10px 0 0 10px;
+}
+
+.flex img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
